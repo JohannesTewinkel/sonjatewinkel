@@ -1,0 +1,28 @@
+{
+  "id": "model3_d",
+  "type": "SharedSlice",
+  "name": "Model3D",
+  "description": "Model3D",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "model3d": {
+          "type": "Link",
+          "config": {
+            "label": "Model3D",
+            "placeholder": "",
+            "select": "media",
+            "allowText": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

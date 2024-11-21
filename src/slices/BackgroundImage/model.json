@@ -1,0 +1,29 @@
+{
+  "id": "background_image",
+  "type": "SharedSlice",
+  "name": "BackgroundImage",
+  "description": "BackgroundImage",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "backdrop": {
+          "type": "Image",
+          "config": {
+            "label": "Backdrop",
+            "constraint": {
+              "width": 1920
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
