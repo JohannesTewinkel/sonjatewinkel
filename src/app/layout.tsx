@@ -19,11 +19,6 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <head>
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rationale&display=swap');
-        </style>
-      </head>
       <body className="overflow-x-hidden antialiased">
         <Header />
         {children}
