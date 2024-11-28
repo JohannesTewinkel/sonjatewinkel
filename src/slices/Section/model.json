@@ -23,13 +23,13 @@
             "thumbnails": []
           }
         },
-        "text": {
-          "type": "StructuredText",
+        "alignleft": {
+          "type": "Boolean",
           "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "heading4,strong,em,heading1,heading2,heading3,heading5,heading6"
+            "label": "alignLeft",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
           }
         },
         "content": {
@@ -38,6 +38,22 @@
             "label": "Content",
             "repeat": true,
             "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title",
+                  "placeholder": ""
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Text",
+                  "placeholder": "lorem ipsum dolor sit amet blablabla",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,hyperlink,list-item,o-list-item,strong,em"
+                }
+              },
               "image": {
                 "type": "Image",
                 "config": {
@@ -49,13 +65,13 @@
                   "thumbnails": []
                 }
               },
-              "text": {
-                "type": "StructuredText",
+              "model3d": {
+                "type": "Link",
                 "config": {
-                  "label": "Text",
-                  "placeholder": "lorem ipsum dolor sit amet blablabla",
-                  "allowTargetBlank": true,
-                  "multi": "paragraph,hyperlink,list-item,o-list-item,strong,em"
+                  "label": "Model3D",
+                  "placeholder": "",
+                  "select": "media",
+                  "allowText": true
                 }
               },
               "button": {
@@ -68,15 +84,6 @@
                 }
               }
             }
-          }
-        },
-        "model3d": {
-          "type": "Link",
-          "config": {
-            "label": "Model3D",
-            "placeholder": "",
-            "select": "media",
-            "allowText": true
           }
         }
       },

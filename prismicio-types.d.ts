@@ -422,14 +422,14 @@ export type Model3DSlice = prismic.SharedSlice<
  */
 export interface SectionSliceDefaultPrimaryContentItem {
   /**
-   * Image field in *Section → Default → Primary → Content*
+   * Title field in *Section → Default → Primary → Content*
    *
-   * - **Field Type**: Image
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: section.default.primary.content[].image
-   * - **Documentation**: https://prismic.io/docs/field#image
+   * - **API ID Path**: section.default.primary.content[].title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  image: prismic.ImageField<never>;
+  title: prismic.KeyTextField;
 
   /**
    * Text field in *Section → Default → Primary → Content*
@@ -440,6 +440,26 @@ export interface SectionSliceDefaultPrimaryContentItem {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   text: prismic.RichTextField;
+
+  /**
+   * Image field in *Section → Default → Primary → Content*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: section.default.primary.content[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Model3D field in *Section → Default → Primary → Content*
+   *
+   * - **Field Type**: Link to Media
+   * - **Placeholder**: *None*
+   * - **API ID Path**: section.default.primary.content[].model3d
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  model3d: prismic.LinkToMediaField;
 
   /**
    * Button field in *Section → Default → Primary → Content*
@@ -468,14 +488,15 @@ export interface SectionSliceDefaultPrimary {
   backdrop: prismic.ImageField<never>;
 
   /**
-   * Title field in *Section → Default → Primary*
+   * alignLeft field in *Section → Default → Primary*
    *
-   * - **Field Type**: Rich Text
+   * - **Field Type**: Boolean
    * - **Placeholder**: *None*
-   * - **API ID Path**: section.default.primary.text
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Default Value**: false
+   * - **API ID Path**: section.default.primary.alignleft
+   * - **Documentation**: https://prismic.io/docs/field#boolean
    */
-  text: prismic.RichTextField;
+  alignleft: prismic.BooleanField;
 
   /**
    * Content field in *Section → Default → Primary*
@@ -486,16 +507,6 @@ export interface SectionSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#group
    */
   content: prismic.GroupField<Simplify<SectionSliceDefaultPrimaryContentItem>>;
-
-  /**
-   * Model3D field in *Section → Default → Primary*
-   *
-   * - **Field Type**: Link to Media
-   * - **Placeholder**: *None*
-   * - **API ID Path**: section.default.primary.model3d
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  model3d: prismic.LinkToMediaField;
 }
 
 /**

@@ -1,38 +1,46 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.image-section{
-    width: 100%;;
-    margin:auto;
-}
-.image-section img{
-    width:100%;
-    height:auto;
-}
 body {
     margin:0;
     padding:0;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(199, 199, 199);
 }
-.title h1{
-    font-family: "Rationale", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  @keyframes blurIn {
+    0%   { filter: blur(50px);}
+    100% {filter: blur(0);}
+  }
+
+.menu{
+    letter-spacing: 1vw;
+    font-size: 18px;
+    font-weight: 50;
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    mix-blend-mode: difference;
+
 }
-img{
-    max-width: 100%;
-    height: auto;
-    max-height: 100vh;
-    width: auto;
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-stretch: expanded;
+  
 }
-.bild img{
-    width: 20vw;
-    height:auto;
-    top: 100;
-    left: 100;
-    z-index: 1;
-}
-model-viewer{
-    width:50vw;
-    height:50vh;
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    animation: fadeIn 1s;
 }
 .backdrop img{
     width: 100%;
@@ -44,4 +52,63 @@ model-viewer{
     z-index:-1;
 }
 
-
+.title {
+    letter-spacing: 1vw;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: normal;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    width: auto;
+}
+.bild {
+    max-width: 100%;
+    z-index: 1;
+    max-height: 80vh;
+    align-items: center;
+    animation: blurIn 1s;
+}
+.bild img{
+    object-fit: contain;
+}
+model-viewer{
+    width:50vw;
+    height:50vh;
+}
+.flex{
+    display: flex;  
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    max-height: 100vh;
+    height: 100%;
+}
+.flex.left{
+    flex-direction: row-reverse;
+}
+.flex.menu{
+    width: 90%;
+    margin-left: 5%;
+    height: fit-content;
+}
+.flex .flistext{
+    font-size: 16px;
+    font-weight: 100;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1,1;
+}
+.text{
+    padding-right: 1vw;
+}
+.flex .flistext, .flex .bild{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-left: 10px;
+    justify-content: center;
+    margin-top: 10vh;
+}

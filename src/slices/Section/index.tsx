@@ -18,22 +18,29 @@ const Section = ({ slice }: SectionProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="Section"
+      className="section"
 
     >
-      <div className="title">
-      <PrismicRichText field={slice.primary.text} />
-      </div>
-     
+      
      <div className="backdrop">
       <PrismicNextImage field={slice.primary.backdrop} />
      </div>
     
       {slice.primary.content.map((item) => (
         <>
-          <PrismicRichText field={item.text} />
-          <div className="bild">
-          <PrismicNextImage field={item.image} />
+          <div className={`flex ${slice.primary.alignleft ? 'left' : ''}`}>
+            <div className="bild">
+              <PrismicNextImage field={item.image} />
+            </div>
+           
+            <div className="flistext">
+              <div className="title">
+                {item.title}
+              </div>
+              <div className="text">
+                <PrismicRichText field={item.text} />
+              </div>
+            </div>
           </div>
           
           {item.button}

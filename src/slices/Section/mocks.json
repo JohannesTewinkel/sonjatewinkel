@@ -26,17 +26,6 @@
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
 			},
-			"text": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading4",
-						"content": {
-							"text": "Continued"
-						}
-					}
-				]
-			},
 			"content": {
 				"__TYPE__": "GroupContentType",
 				"value": [
@@ -89,22 +78,37 @@
 									"__TYPE__": "BooleanContent",
 									"value": false
 								}
+							],
+							[
+								"model3d",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "FileLink",
+										"id": "mock_Media_link",
+										"kind": "file",
+										"name": "mock_name",
+										"url": "https://source.unsplash.com/daily",
+										"size": "0",
+										"text": "orbit"
+									}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "audience",
+									"type": "Text"
+								}
 							]
 						]
 					}
 				]
 			},
-			"model3d": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "FileLink",
-					"id": "mock_Media_link",
-					"kind": "file",
-					"name": "mock_name",
-					"url": "https://source.unsplash.com/daily",
-					"size": "0",
-					"text": "finest"
-				}
+			"alignleft": {
+				"__TYPE__": "BooleanContent",
+				"value": true
 			}
 		},
 		"items": []
