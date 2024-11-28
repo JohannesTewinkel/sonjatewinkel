@@ -1,3 +1,5 @@
+'use client'
+
 import { PrismicRichText } from "@/components/PrismicRichText";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
