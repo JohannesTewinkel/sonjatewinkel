@@ -51,7 +51,7 @@
                   "label": "Text",
                   "placeholder": "lorem ipsum dolor sit amet blablabla",
                   "allowTargetBlank": true,
-                  "multi": "paragraph,hyperlink,list-item,o-list-item,strong,em"
+                  "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item,embed,image"
                 }
               },
               "image": {

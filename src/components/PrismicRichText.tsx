@@ -47,7 +47,7 @@ const defaultComponents: JSXMapSerializer = {
   hyperlink: ({ children, node }) => (
     <PrismicNextLink
       field={node.data}
-      className="underline decoration-1 underline-offset-2"
+      className=" decoration-1 underline-offset-2"
     >
       {children}
     </PrismicNextLink>

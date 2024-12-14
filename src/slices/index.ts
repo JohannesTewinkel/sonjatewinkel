@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 
 export const components = {
   background_image: dynamic(() => import("./BackgroundImage")),
+  footer: dynamic(() => import("./Footer")),
   image_section: dynamic(() => import("./ImageSection")),
   model3_d: dynamic(() => import("./Model3D")),
   section: dynamic(() => import("./Section")),

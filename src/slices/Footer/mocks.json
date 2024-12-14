@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"footer_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ipsum cupidatat eu velit eiusmod magna elit sint exercitation cupidatat. Ea ipsum minim reprehenderit magna et consequat deserunt ex deserunt qui."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

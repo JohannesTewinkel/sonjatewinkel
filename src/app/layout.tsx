@@ -7,6 +7,7 @@ import { PrismicNextLink, PrismicPreview } from "@prismicio/next";
 
 import { createClient, repositoryName } from "@/prismicio";
 import { Bounded } from "@/components/Bounded";
+import {Navigation} from "../components/Navigation"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,17 +35,8 @@ async function Header() {
   const navigation = await client.getSingle("navigation");
 
   return (
-      <div className="flex menu">
-        {navigation.data?.links.map((item) => (
-          <div
-            key={asText(item.label)}
-            className=""
-          >
-            <PrismicNextLink field={item.link}>
-              <PrismicText field={item.label} />
-            </PrismicNextLink>
-          </div>
-        ))}
-      </div>
+
+          <Navigation navigation={navigation}/>
+
   );
 }

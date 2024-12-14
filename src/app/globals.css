@@ -6,7 +6,7 @@ body {
     margin:0;
     padding:0;
     font-family: "Open Sans", sans-serif;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);   
 }
 
 @keyframes fadeIn {
@@ -15,7 +15,7 @@ body {
   }
 
   @keyframes blurIn {
-    0%   { filter: blur(50px);}
+    0%   { filter: blur(50px);} 
     100% {filter: blur(0);}
   }
 
@@ -26,14 +26,13 @@ body {
     position: fixed;
     z-index: 2;
     top: 10px;
-    mix-blend-mode: difference;
+    mix-blend-mode: difference; 
 
-}
-.menu a {
+}   
+.menu a {   
     color: white;
     text-decoration: none;
     font-stretch: expanded;
-  
 }
 
 .section{
@@ -75,8 +74,8 @@ img{
     object-fit: contain;
 }
 model-viewer{
-    width:50vw;
-    height:50vh;
+    width:40vw;
+    height:80vh;
 }
 .flex{
     display: flex;  
@@ -103,12 +102,34 @@ model-viewer{
 }
 .text{
     padding-right: 1vw;
+    color: rgb(56, 56, 56);
 }
 .flex .flistext, .flex .bild{
     display: flex;
     flex-direction: column;
     width: 49%;
     margin-left: 10px;
-    justify-content: center;
+    justify-content: center;    
     margin-top: 10vh;
+}
+.text a{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    
+}
+.text a:hover, .text a:active{
+    color:  rgb(204, 204, 204);
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-color: rgb(115, 115, 115);
+}
+
+
+.underline{
+    border-bottom: 1.5px solid rgb(55, 55, 55);
+    padding-bottom: 5px;
+    width: 100px;
+    position: absolute;
+    transition: left 0.4s ease;
+    transform: translateX(-50%);
 }

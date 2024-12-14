@@ -1,21 +1,13 @@
 'use client'
 
 import { PrismicRichText } from "@/components/PrismicRichText";
-import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
-import { SliceComponentProps } from "@prismicio/react";
 
-
-
-/**
- * Props for `Section`.
- */
-export type SectionProps = SliceComponentProps<Content.SectionSlice>;
 
 /**
  * Component for "Section" Slices.
  */
-const Section = ({ slice }: SectionProps): JSX.Element => {
+const Section = ({ slice }) => {
   return (
     <section
       data-slice-type={slice.slice_type}
@@ -33,6 +25,13 @@ const Section = ({ slice }: SectionProps): JSX.Element => {
           <div className={`flex ${slice.primary.alignleft ? 'left' : ''}`}>
             <div className="bild">
               <PrismicNextImage field={item.image} />
+              <model-viewer  
+              src={item.model3d.url} 
+              ar 
+              shadow-intensity="1" camera-controls 
+              touch-action="pan-y">
+
+              </model-viewer> 
             </div>
            
             <div className="flistext">
@@ -41,6 +40,9 @@ const Section = ({ slice }: SectionProps): JSX.Element => {
               </div>
               <div className="text">
                 <PrismicRichText field={item.text} />
+              </div>
+              <div className="button">
+                {item.button}
               </div>
             </div>
           </div>
