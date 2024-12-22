@@ -10,7 +10,7 @@ import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 const Section = ({ slice }) => {
   return (
     <section
-      data-slice-type={slice.slice_type}
+      data-slice-type={slice.slice_type}  
       data-slice-variation={slice.variation}
       className="section"
 
