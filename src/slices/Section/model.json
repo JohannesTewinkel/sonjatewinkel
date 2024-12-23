@@ -32,6 +32,15 @@
             "default_value": false
           }
         },
+        "whitetext": {
+          "type": "Boolean",
+          "config": {
+            "label": "whiteText",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
         "content": {
           "type": "Group",
           "config": {

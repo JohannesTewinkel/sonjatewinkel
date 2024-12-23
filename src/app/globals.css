@@ -19,6 +19,11 @@ body {
     100% {filter: blur(0);}
   }
 
+html, body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+}
 .menu{
     letter-spacing: 1vw;
     font-size: 18px;
@@ -36,6 +41,7 @@ body {
 }
 
 .section{
+    scroll-snap-align: start;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -76,6 +82,15 @@ img{
 .bild img{
     object-fit: contain;
 }
+
+.text-black {
+    color: black;
+  }
+  
+  .text-white {
+    color: white;
+  }
+
 model-viewer{
     width:40vw;
     height:80vh;
