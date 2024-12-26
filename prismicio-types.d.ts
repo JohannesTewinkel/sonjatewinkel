@@ -542,15 +542,15 @@ export interface SectionSliceDefaultPrimary {
   alignleft: prismic.BooleanField;
 
   /**
-   * whiteText field in *Section → Default → Primary*
+   * TextSchatten field in *Section → Default → Primary*
    *
    * - **Field Type**: Boolean
    * - **Placeholder**: *None*
    * - **Default Value**: false
-   * - **API ID Path**: section.default.primary.whitetext
+   * - **API ID Path**: section.default.primary.textshadow
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
-  whitetext: prismic.BooleanField;
+  textshadow: prismic.BooleanField;
 
   /**
    * Content field in *Section → Default → Primary*

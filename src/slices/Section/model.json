@@ -32,10 +32,10 @@
             "default_value": false
           }
         },
-        "whitetext": {
+        "textshadow": {
           "type": "Boolean",
           "config": {
-            "label": "whiteText",
+            "label": "TextSchatten",
             "placeholder_false": "false",
             "placeholder_true": "true",
             "default_value": false

@@ -110,7 +110,7 @@
 				"__TYPE__": "BooleanContent",
 				"value": true
 			},
-			"whitetext": {
+			"textshadow": {
 				"__TYPE__": "BooleanContent",
 				"value": false
 			}

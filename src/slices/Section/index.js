@@ -19,11 +19,7 @@ const Section = ({ slice }) => {
 
       {slice.primary.content.map((item, index) => (
         <div
-          key={index}
-          className={`flex ${slice.primary.alignleft ? 'left' : ''} ${
-            slice.primary.whitetext ? 'text-white' : 'text-black'
-          }`}
-        >
+          className={`flex ${slice.primary.alignleft ? 'left' : ''} `}>
           <div className="bild">
             <PrismicNextImage field={item.image} />
             <model-viewer
@@ -34,8 +30,7 @@ const Section = ({ slice }) => {
               touch-action="pan-y"
             ></model-viewer>
           </div>
-
-          <div className="flistext">
+          <div className="flistext">  
             <div className="title">{item.title}</div>
             <div className="text">
               <PrismicRichText field={item.text} />

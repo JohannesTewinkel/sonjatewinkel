@@ -64,7 +64,8 @@ html, body {
     font-size: 36px;
     line-height: normal;
     z-index: 2;
-    mix-blend-mode: difference;
+    mix-blend-mode:none;
+    text-shadow:2px 2px black;
 }
 img{
     max-width: 100%;
@@ -82,14 +83,6 @@ img{
 .bild img{
     object-fit: contain;
 }
-
-.text-black {
-    color: black;
-  }
-  
-  .text-white {
-    color: white;
-  }
 
 model-viewer{
     width:40vw;
@@ -112,6 +105,7 @@ model-viewer{
     height: fit-content;
 }
 .flex .flistext{
+    color: white;
     font-size: 16px;
     font-weight: 100;
     text-align: left;
@@ -120,7 +114,7 @@ model-viewer{
 }
 .text{
     padding-right: 1vw;
-    color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
 }
 .flex .flistext, .flex .bild{
     display: flex;
@@ -151,12 +145,9 @@ model-viewer{
     transition: left 0.4s ease;
     transform: translateX(-50%);
 }
-
-
-
 /* Hamburger Icon */
 .hamburger {
-    display: none; /* Hidden on desktop */
+    display:block; /* Hidden on desktop */
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
